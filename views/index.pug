@@ -1,0 +1,148 @@
+html
+    head
+        title LearnLegion
+        style
+            include ../assets/style.css
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Arimo|Oswald")
+    body
+        
+        div(id="wrapper")
+            
+            div(class="text-div")
+                h1 LearnLegion.com
+                h2 Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.
+                h3 The keyfeature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills. Just start by selecting your class for the current game you're in...
+            
+            div(class="class-select border-green")
+
+                form(name="own-class-selection")
+
+                    div(class="radio-selector")
+
+                        input(type="radio" name="own-class" id="element")
+                        label(class="radio-img element" for="element")
+                        
+                        input(type="radio" name="own-class" id="forsaken")
+                        label(class="radio-img forsaken" for="forsaken")
+
+                        input(type="radio" name="own-class" id="grove")
+                        label(class="radio-img grove" for="grove")
+
+                        input(type="radio" name="own-class" id="mech")
+                        label(class="radio-img mech" for="mech")
+
+                        input(type="radio" name="own-class" id="mastermind")
+                        label(class="radio-img mastermind" for="mastermind")
+
+            h3(class="step-by-step") Ok, you selected Mastermind. Tell us which Units you've got...
+
+            div(class="unit-select border-blue")
+
+                form(name="mastermind-unit-selection")
+
+                    div(class="unit-sort-div")
+                        h3 Element
+
+                        <input type='checkbox' name='proton' id="proton"/>
+                        <label class="unit-img proton" for="proton"></label>
+                        
+                        <input type='checkbox' name='aquaspirit' id="aquaspirit"/>
+                        <label class="unit-img aquaspirit" for="aquaspirit"></label>
+                        
+                        <input type='checkbox' name='windhawk' id="windhawk"/>
+                        <label class="unit-img windhawk" for="windhawk"></label>
+
+                        <input type='checkbox' name='mudman' id="mudman"/>
+                        <label class="unit-img mudman" for="mudman"></label>
+
+                        <input type='checkbox' name='disciple' id="disciple"/>
+                        <label class="unit-img disciple" for="disciple"></label>
+
+                        <input type='checkbox' name='firelord' id="firelord"/>
+                        <label class="unit-img firelord" for="firelord"></label>
+
+                    div(class="unit-sort-div")
+                        h3 Forsaken
+
+                        <input type='checkbox' name='bonewarrior' id="bonewarrior"/>
+                        <label class="unit-img bonewarrior" for="bonewarrior"></label>
+
+                        <input type='checkbox' name='gargoyle' id="gargoyle"/>
+                        <label class="unit-img gargoyle" for="gargoyle"></label>
+
+                        <input type='checkbox' name='gateguard' id="gateguard"/>
+                        <label class="unit-img gateguard" for="gateguard"></label>
+
+                        <input type='checkbox' name='butcher' id="butcher"/>
+                        <label class="unit-img butcher" for="butcher"></label>
+
+                        <input type='checkbox' name='nightmare' id="nightmare"/>
+                        <label class="unit-img nightmare" for="nightmare"></label>
+
+                        <input type='checkbox' name='lordofdeath' id="lordofdeath"/>
+                        <label class="unit-img lordofdeath" for="lordofdeath"></label>
+                    
+                    div(class="unit-sort-div")
+                        h3 Grove
+
+                        <input type='checkbox' name='buzz' id="buzz"/>
+                        <label class="unit-img buzz" for="buzz"></label>
+
+                        <input type='checkbox' name='ranger' id="ranger"/>
+                        <label class="unit-img ranger" for="ranger"></label>
+                        
+                        <input type='checkbox' name='wileshroom' id="wileshroom"/>
+                        <label class="unit-img wileshroom" for="wileshroom"></label>
+                        
+                        <input type='checkbox' name='honeyflower' id="honeyflower"/>
+                        <label class="unit-img honeyflower" for="honeyflower"></label>
+
+                        <input type='checkbox' name='antler' id="antler"/>
+                        <label class="unit-img antler" for="antler"></label>
+
+                        <input type='checkbox' name='bananabunk' id="bananabunk"/>
+                        <label class="unit-img bananabunk" for="bananabunk"></label>
+                    
+                    div(class="unit-sort-div")
+                        h3 Mech
+
+                        <input type='checkbox' name='peewee' id="peewee"/>
+                        <label class="unit-img peewee" for="peewee"></label>
+
+                        <input type='checkbox' name='buzz' id="bazooka"/>
+                        <label class="unit-img bazooka" for="bazooka"></label>
+                        
+                        <input type='checkbox' name='tempest' id="tempest"/>
+                        <label class="unit-img tempest" for="tempest"></label>
+                        
+                        <input type='checkbox' name='aps' id="aps"/>
+                        <label class="unit-img aps" for="aps"></label>
+                        
+                        <input type='checkbox' name='berserker' id="berserker"/>
+                        <label class="unit-img berserker" for="berserker"></label>
+                        
+                        <input type='checkbox' name='millennium' id="millennium"/>
+                        <label class="unit-img millennium" for="millennium"></label>
+
+            h3(class="step-by-step") Great! Now select the class your direct enemy is using. ( i )
+
+            div(class="class-select border-red")
+
+                form(name="enemy-class-select")
+
+                    div(class="radio-selector")
+
+                        input(type="radio" name="enemy-class" id="element-enemy")
+                        label(class="radio-img element" for="element-enemy")
+                        
+                        input(type="radio" name="enemy-class" id="forsaken-enemy")
+                        label(class="radio-img forsaken" for="forsaken-enemy")
+
+                        input(type="radio" name="enemy-class" id="grove-enemy")
+                        label(class="radio-img grove" for="grove-enemy")
+
+                        input(type="radio" name="enemy-class" id="mech-enemy")
+                        label(class="radio-img mech" for="mech-enemy")
+
+                        input(type="radio" name="enemy-class" id="mastermind-enemy")
+                        label(class="radio-img mastermind" for="mastermind-enemy")

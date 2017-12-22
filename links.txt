@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/3896156/how-do-i-style-radio-buttons-with-images-laughing-smiley-for-good-sad-smiley/3896259
+http://jsfiddle.net/La8wQ/10/
+
+https://stackoverflow.com/questions/3772273/pure-css-checkbox-image-replacement

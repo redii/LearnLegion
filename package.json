@@ -1,0 +1,23 @@
+{
+  "name": "legiontd-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redii/legion.git"
+  },
+  "author": "redii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redii/legion/issues"
+  },
+  "homepage": "https://github.com/redii/legion#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}
