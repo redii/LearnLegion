@@ -35,6 +35,9 @@
                         <a class="nav-link" href="#">Bugs</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link disabled" href="#">Donate</a>
                     </li>
                 </ul>
@@ -54,11 +57,11 @@
                 </div>
                 <div class="col-sm-8" id="ha-welcome-div">
                     <br><br><br><br>
-                    <h1 class="display-3">LearnLegion.com</h1>
+                    <h1 class="display-4">LearnLegion.com</h1>
                     <br>
                     <h4>Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.</h4>
                     <br>
-                    <p>The keyfeature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills. Just start by selecting your class for the current game you're in...</p>
+                    <p>The main feature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills. Just start by selecting your class for the current game you're in...</p>
                 </div>
                 <div class="col-sm-3">
                     <!-- Advertisments goes here -->
@@ -67,7 +70,6 @@
         </div>
 
         <!-- Dynamic Content goes here -->
-
         <div class="container-fluid">
             <div class="row content">
                 <div class="col-sm-1">
@@ -79,25 +81,123 @@
                     <div class="guide-div fadein" id="class-selection">
                         <div class="ltd-class-selector">
                             <form>
-                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
-                                <label class="ltd-class element" for="element"></label>
+                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); hideUnitSelect(); incProgress('20%');">
+                                <label class="ltd-class ltd-class-fix element" for="element" title="Element"></label>
 
-                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
-                                <label class="ltd-class forsaken" for="forsaken"></label>
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); hideUnitSelect(); incProgress('20%');">
+                                <label class="ltd-class forsaken" for="forsaken" title="Forsaken"></label>
 
-                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
-                                <label class="ltd-class grove" for="grove"></label>
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); hideUnitSelect(); incProgress('20%');">
+                                <label class="ltd-class grove" for="grove" title="Grove"></label>
 
-                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
-                                <label class="ltd-class mech" for="mech"></label>
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); hideUnitSelect(); incProgress('20%');">
+                                <label class="ltd-class mech" for="mech" title="Mech"></label>
 
-                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('unit-selection'); incProgress('20%');">
-                                <label class="ltd-class mastermind" for="mastermind"></label>
+                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('mm-unit-selection'); incProgress('20%');">
+                                <label class="ltd-class ltd-class-fix mastermind" for="mastermind" title="Mastermind"></label>
                             </form>
                         </div>
                     </div>
 
                     <!-- Step 1.1 | Select Mastermind Units -->
+                    <div class="guide-div fadein" id="mm-unit-selection" style="display: none;">
+                        <p>Ok, you selected Mastermind. Tell us which units you've got.</p>
+                        <div class="ltd-unit-selector">
+                            <form>
+                                <!-- Element -->
+                                <div>
+                                    <label class="ltd-unit-class-icon element"></label>
+
+                                    <input type='checkbox' name='proton' id="proton" onchange="countChecks('proton');"/>
+                                    <label class="ltd-unit proton" for="proton" title="Proton"></label>
+                                    
+                                    <input type='checkbox' name='aquaspirit' id="aquaspirit" onchange="countChecks('aquaspirit');"/>
+                                    <label class="ltd-unit aquaspirit" for="aquaspirit" title="Aquaspirit"></label>
+                                    
+                                    <input type='checkbox' name='windhawk' id="windhawk" onchange="countChecks('windhawk');"/>
+                                    <label class="ltd-unit windhawk" for="windhawk" title="Windhawk"></label>
+            
+                                    <input type='checkbox' name='mudman' id="mudman" onchange="countChecks('mudman');"/>
+                                    <label class="ltd-unit mudman" for="mudman" title="Mudman"></label>
+            
+                                    <input type='checkbox' name='disciple' id="disciple" onchange="countChecks('disciple');"/>
+                                    <label class="ltd-unit disciple" for="disciple" title="Disciple"></label>
+            
+                                    <input type='checkbox' name='firelord' id="firelord" onchange="countChecks('firelord');"/>
+                                    <label class="ltd-unit firelord" for="firelord" title="Firelord"></label>
+                                </div>
+
+                                <!-- Forsaken -->
+                                <div>
+                                    <label class="ltd-unit-class-icon forsaken"></label>
+
+                                    <input type='checkbox' name='bonewarrior' id="bonewarrior" onchange="countChecks('bonewarrior');"/>
+                                    <label class="ltd-unit bonewarrior" for="bonewarrior" title="Bonewarrior"></label>
+            
+                                    <input type='checkbox' name='gargoyle' id="gargoyle" onchange="countChecks('gargoyle');"/>
+                                    <label class="ltd-unit gargoyle" for="gargoyle" title="Gargoyle"></label>
+            
+                                    <input type='checkbox' name='gateguard' id="gateguard" onchange="countChecks('gateguard');"/>
+                                    <label class="ltd-unit gateguard" for="gateguard" title="Gateguard"></label>
+            
+                                    <input type='checkbox' name='butcher' id="butcher" onchange="countChecks('butcher');"/>
+                                    <label class="ltd-unit butcher" for="butcher" title="Butcher"></label>
+            
+                                    <input type='checkbox' name='nightmare' id="nightmare" onchange="countChecks('nightmare');"/>
+                                    <label class="ltd-unit nightmare" for="nightmare" title="Nightmare"></label>
+            
+                                    <input type='checkbox' name='lordofdeath' id="lordofdeath" onchange="countChecks('lordofdeath');"/>
+                                    <label class="ltd-unit lordofdeath" for="lordofdeath" title="Lord of Death"></label>
+                                </div>
+
+                                <!-- Grove -->
+                                <div>
+                                    <label class="ltd-unit-class-icon grove"></label>
+                                    
+                                    <input type='checkbox' name='buzz' id="buzz" onchange="countChecks('buzz');"/>
+                                    <label class="ltd-unit buzz" for="buzz" title="Buzz"></label>
+            
+                                    <input type='checkbox' name='ranger' id="ranger" onchange="countChecks('ranger');"/>
+                                    <label class="ltd-unit ranger" for="ranger" title="Ranger"></label>
+                                    
+                                    <input type='checkbox' name='wileshroom' id="wileshroom" onchange="countChecks('wileshroom');"/>
+                                    <label class="ltd-unit wileshroom" for="wileshroom" title="Whileshroom"></label>
+                                    
+                                    <input type='checkbox' name='honeyflower' id="honeyflower" onchange="countChecks('honeyflower');"/>
+                                    <label class="ltd-unit honeyflower" for="honeyflower" title="Honeyflower"></label>
+            
+                                    <input type='checkbox' name='antler' id="antler" onchange="countChecks('antler');"/>
+                                    <label class="ltd-unit antler" for="antler" title="Antler"></label>
+            
+                                    <input type='checkbox' name='bananabunk' id="bananabunk" onchange="countChecks('bananabunk');"/>
+                                    <label class="ltd-unit bananabunk" for="bananabunk" title="Bananabunk"></label>
+                                </div>
+
+                                <!-- Mech -->
+                                <div>
+                                    <label class="ltd-unit-class-icon mech"></label>
+                                    
+                                    <input type='checkbox' name='peewee' id="peewee" onchange="countChecks('peewee');"/>
+                                    <label class="ltd-unit peewee" for="peewee" title="Peewee"></label>
+            
+                                    <input type='checkbox' name='bazooka' id="bazooka" onchange="countChecks('bazooka');"/>
+                                    <label class="ltd-unit bazooka" for="bazooka" title="Bazooka"></label>
+                                    
+                                    <input type='checkbox' name='tempest' id="tempest" onchange="countChecks('tempest');"/>
+                                    <label class="ltd-unit tempest" for="tempest" title="Tempest"></label>
+                                    
+                                    <input type='checkbox' name='aps' id="aps" onchange="countChecks('aps');"/>
+                                    <label class="ltd-unit aps" for="aps" title="APS"></label>
+                                    
+                                    <input type='checkbox' name='berserker' id="berserker" onchange="countChecks('berserker');"/>
+                                    <label class="ltd-unit berserker" for="berserker" title="Berserker"></label>
+                                    
+                                    <input type='checkbox' name='millennium' id="millennium" onchange="countChecks('millennium');"/>
+                                    <label class="ltd-unit millennium" for="millennium" title="Millennium"></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
                     <!-- Step 2 | Select enemy class -->
                     <div class="guide-div fadein" id="enemy-class-selection" style="display: none;">
@@ -105,19 +205,19 @@
                         <div class="ltd-class-selector">
                             <form>
                                 <input type="radio" name="enemy-class-select" value="enemy-element" id="enemy-element" onclick="showDiv(''); incProgress('40%');">
-                                <label class="ltd-class element" for="enemy-element"></label>
+                                <label class="ltd-class ltd-class-fix element" for="enemy-element" title="Element"></label>
 
                                 <input type="radio" name="enemy-class-select" value="enemy-forsaken" id="enemy-forsaken" onclick="showDiv(''); incProgress('40%');">
-                                <label class="ltd-class forsaken" for="enemy-forsaken"></label>
+                                <label class="ltd-class forsaken" for="enemy-forsaken" title="Forsaken"></label>
 
                                 <input type="radio" name="enemy-class-select" value="enemy-grove" id="enemy-grove" onclick="showDiv(''); incProgress('40%');">
-                                <label class="ltd-class grove" for="enemy-grove"></label>
+                                <label class="ltd-class grove" for="enemy-grove" title="Grove"></label>
 
                                 <input type="radio" name="enemy-class-select" value="enemy-mech" id="enemy-mech" onclick="showDiv(''); incProgress('40%');">
-                                <label class="ltd-class mech" for="enemy-mech"></label>
+                                <label class="ltd-class mech" for="enemy-mech" title="Mech"></label>
 
                                 <input type="radio" name="enemy-class-select" value="enemy-mastermind" id="enemy-mastermind" onclick="showDiv(''); incProgress('40%');">
-                                <label class="ltd-class mastermind" for="enemy-mastermind"></label>
+                                <label class="ltd-class ltd-class-fix mastermind" for="enemy-mastermind" title="Mastermind"></label>
                             </form>
                         </div>
                     </div>
@@ -130,8 +230,5 @@
                 </div>
             </div>
         </div>
-
-
-
     </body>
 </html>
