@@ -18,20 +18,27 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="#">LearnLegion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bugs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Donate</a>
-                </li>
-            </ul>
+            <a class="navbar-brand" href="#">LearnLegion</a>
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bugs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Donate</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Progressbar -->
@@ -39,14 +46,13 @@
             <div class="progress-bar" id="progress-bar" style="width:00%"></div>
         </div>
 
-        <!-- First Row of Divs -->
+        <!-- Welcome Div -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1">
                     <!-- Spaceholder -->
                 </div>
                 <div class="col-sm-8" id="ha-welcome-div">
-                    <!-- Welcome Div -->
                     <br><br><br><br>
                     <h1 class="display-3">LearnLegion.com</h1>
                     <br>
@@ -73,19 +79,19 @@
                     <div class="guide-div fadein" id="class-selection">
                         <div class="ltd-class-selector">
                             <form>
-                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
                                 <label class="ltd-class element" for="element"></label>
 
-                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
                                 <label class="ltd-class forsaken" for="forsaken"></label>
 
-                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
                                 <label class="ltd-class grove" for="grove"></label>
 
-                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); incProgress('20%');">
                                 <label class="ltd-class mech" for="mech"></label>
 
-                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('unit-selection'); incProgress(20);">
+                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('unit-selection'); incProgress('20%');">
                                 <label class="ltd-class mastermind" for="mastermind"></label>
                             </form>
                         </div>
@@ -98,19 +104,19 @@
                         <p>Great! Now select the class your enemy is using.</p>
                         <div class="ltd-class-selector">
                             <form>
-                                <input type="radio" name="enemy-class-select" value="enemy-element" id="enemy-element" onclick="showDiv(''); incProgress(20);">
+                                <input type="radio" name="enemy-class-select" value="enemy-element" id="enemy-element" onclick="showDiv(''); incProgress('40%');">
                                 <label class="ltd-class element" for="enemy-element"></label>
 
-                                <input type="radio" name="enemy-class-select" value="enemy-forsaken" id="enemy-forsaken" onclick="showDiv(''); incProgress(20);">
+                                <input type="radio" name="enemy-class-select" value="enemy-forsaken" id="enemy-forsaken" onclick="showDiv(''); incProgress('40%');">
                                 <label class="ltd-class forsaken" for="enemy-forsaken"></label>
 
-                                <input type="radio" name="enemy-class-select" value="enemy-grove" id="enemy-grove" onclick="showDiv(''); incProgress(20);">
+                                <input type="radio" name="enemy-class-select" value="enemy-grove" id="enemy-grove" onclick="showDiv(''); incProgress('40%');">
                                 <label class="ltd-class grove" for="enemy-grove"></label>
 
-                                <input type="radio" name="enemy-class-select" value="enemy-mech" id="enemy-mech" onclick="showDiv(''); incProgress(20);">
+                                <input type="radio" name="enemy-class-select" value="enemy-mech" id="enemy-mech" onclick="showDiv(''); incProgress('40%');">
                                 <label class="ltd-class mech" for="enemy-mech"></label>
 
-                                <input type="radio" name="enemy-class-select" value="enemy-mastermind" id="enemy-mastermind" onclick="showDiv(''); incProgress(20);">
+                                <input type="radio" name="enemy-class-select" value="enemy-mastermind" id="enemy-mastermind" onclick="showDiv(''); incProgress('40%');">
                                 <label class="ltd-class mastermind" for="enemy-mastermind"></label>
                             </form>
                         </div>

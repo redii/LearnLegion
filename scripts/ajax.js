@@ -5,8 +5,5 @@ function showDiv(id) {
 }
 
 function incProgress(percentage) {
-    p = document.getElementById('progress-bar').style.width.substr(0,2);
-    p = parseInt(p) + percentage;
-    p = p + '%';
-    document.getElementById('progress-bar').style.width = p;
+    document.getElementById('progress-bar').style.width = percentage;
 }
