@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LearnLegion</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bs.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="selections.css">
+        <link rel="stylesheet" href="animations.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <script src="ajax.js"></script>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="#">LearnLegion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bugs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Donate</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Progressbar -->
+        <div class="progress fixed-top">
+            <div class="progress-bar" id="progress-bar" style="width:00%"></div>
+        </div>
+
+        <!-- First Row of Divs -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1">
+                    <!-- Spaceholder -->
+                </div>
+                <div class="col-sm-8" id="ha-welcome-div">
+                    <!-- Welcome Div -->
+                    <br><br><br><br>
+                    <h1 class="display-3">LearnLegion.com</h1>
+                    <br>
+                    <h4>Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.</h4>
+                    <br>
+                    <p>The keyfeature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills. Just start by selecting your class for the current game you're in...</p>
+                </div>
+                <div class="col-sm-3">
+                    <!-- Advertisments goes here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Content goes here -->
+
+        <div class="container-fluid">
+            <div class="row content">
+                <div class="col-sm-1">
+                    <!-- Spaceholder -->
+                </div>
+                <div class="col-sm-5">
+                    
+                    <!-- Step 1 | Select own class -->
+                    <div class="guide-div fadein" id="class-selection">
+                        <div class="ltd-class-selector">
+                            <form>
+                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <label class="ltd-class element" for="element"></label>
+
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <label class="ltd-class forsaken" for="forsaken"></label>
+
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <label class="ltd-class grove" for="grove"></label>
+
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); incProgress(20);">
+                                <label class="ltd-class mech" for="mech"></label>
+
+                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('unit-selection'); incProgress(20);">
+                                <label class="ltd-class mastermind" for="mastermind"></label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Step 1.1 | Select Mastermind Units -->
+
+                    <!-- Step 2 | Select enemy class -->
+                    <div class="guide-div fadein" id="enemy-class-selection" style="display: none;">
+                        <p>Great! Now select the class your enemy is using.</p>
+                        <div class="ltd-class-selector">
+                            <form>
+                                <input type="radio" name="enemy-class-select" value="enemy-element" id="enemy-element" onclick="showDiv(''); incProgress(20);">
+                                <label class="ltd-class element" for="enemy-element"></label>
+
+                                <input type="radio" name="enemy-class-select" value="enemy-forsaken" id="enemy-forsaken" onclick="showDiv(''); incProgress(20);">
+                                <label class="ltd-class forsaken" for="enemy-forsaken"></label>
+
+                                <input type="radio" name="enemy-class-select" value="enemy-grove" id="enemy-grove" onclick="showDiv(''); incProgress(20);">
+                                <label class="ltd-class grove" for="enemy-grove"></label>
+
+                                <input type="radio" name="enemy-class-select" value="enemy-mech" id="enemy-mech" onclick="showDiv(''); incProgress(20);">
+                                <label class="ltd-class mech" for="enemy-mech"></label>
+
+                                <input type="radio" name="enemy-class-select" value="enemy-mastermind" id="enemy-mastermind" onclick="showDiv(''); incProgress(20);">
+                                <label class="ltd-class mastermind" for="enemy-mastermind"></label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <!-- Results -->
+                </div>
+                <div class="col-sm-1">
+                    <!-- Spaceholder -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

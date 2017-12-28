@@ -1,0 +1,78 @@
+.element {background-image:url("/images/classes/element_2.png");}
+.forsaken {background-image:url("/images/classes/forsaken_2.png");}
+.grove {background-image:url("/images/classes/grove_2.png");}
+.mech {background-image:url("/images/classes/mech_2.png");}
+.mastermind {background-image:url("/images/classes/mastermind_2.png");}
+
+.proton {background-image:url("/images/units/element/Proton.png");}
+.aquaspirit {background-image:url("/images/units/element/Aquaspirit.png");}
+.windhawk {background-image:url("/images/units/element/Windhawk.png");}
+.mudman {background-image:url("/images/units/element/Mudman.png");}
+.disciple {background-image:url("/images/units/element/Disciple.png");}
+.firelord {background-image:url("/images/units/element/Firelord.png");}
+
+.bonewarrior {background-image:url("/images/units/forsaken/BoneWarrior.png");}
+.gargoyle {background-image:url("/images/units/forsaken/Gargoyle.png");}
+.gateguard {background-image:url("/images/units/forsaken/Gateguard.png");}
+.butcher {background-image:url("/images/units/forsaken/Butcher.png");}
+.nightmare {background-image:url("/images/units/forsaken/Nightmare.png");}
+.lordofdeath {background-image:url("/images/units/forsaken/LordOfDeath.png");}
+
+.buzz {background-image:url("/images/units/grove/Buzz.png");}
+.ranger {background-image:url("/images/units/grove/Ranger.png");}
+.wileshroom {background-image:url("/images/units/grove/Wileshroom.png");}
+.honeyflower {background-image:url("/images/units/grove/Honeyflower.png");}
+.antler {background-image:url("/images/units/grove/Antler.png");}
+.bananabunk {background-image:url("/images/units/grove/BananaBunk.png");}
+
+.peewee {background-image:url("/images/units/mech/Peewee.png");}
+.bazooka {background-image:url("/images/units/mech/Bazooka.png");}
+.tempest {background-image:url("/images/units/mech/Tempest.png");}
+.aps {background-image:url("/images/units/mech/APS.png");}
+.berserker {background-image:url("/images/units/mech/Berserker.png");}
+.millennium {background-image:url("/images/units/mech/Millennium.png");}
+
+.ltd-class-selector {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.ltd-class-selector input {
+    margin:0;
+    padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.ltd-class-selector input:active +.ltd-class {
+    opacity: .9;
+}
+
+.ltd-class-selector input:checked +.ltd-class {
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+.ltd-class {
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.ltd-class:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
