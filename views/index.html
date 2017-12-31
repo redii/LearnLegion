@@ -6,9 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bs.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="selections.css">
+        <link rel="stylesheet" href="ltd.css">
         <link rel="stylesheet" href="animations.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -66,7 +65,18 @@
                     <p>Just start by selecting your class for the current game you're in...</p>
                 </div>
                 <div class="col-sm-4">
-                    <!-- Advertisments goes here -->
+                    <br><br><br><br>
+                    <!-- Advertisment goes here || LearnLegion_Mainblock -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-8861358739085235"
+                        data-ad-slot="9855709929"
+                        data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <!-- End of Advertisment -->
                 </div>
             </div>
         </div>
@@ -84,19 +94,19 @@
                     <div class="guide-div fadein text-center" id="class-selection">
                         <div class="ltd-class-selector">
                             <form name="form1">
-                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('20%');">
+                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('class');">
                                 <label class="ltd-class ltd-class-fix element" for="element" title="Element"></label>
 
-                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('20%');">
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('class');">
                                 <label class="ltd-class forsaken" for="forsaken" title="Forsaken"></label>
 
-                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('20%');">
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('class');">
                                 <label class="ltd-class grove" for="grove" title="Grove"></label>
 
-                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('20%');">
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('class');">
                                 <label class="ltd-class mech" for="mech" title="Mech"></label>
 
-                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="showDiv('mm-unit-selection'); incProgress('20%');">
+                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="hideDiv('enemy-class-selection'); showDiv('mm-unit-selection'); incProgress('class-mm');">
                                 <label class="ltd-class ltd-class-fix mastermind" for="mastermind" title="Mastermind"></label>
                             </form>
                         </div>
@@ -316,7 +326,36 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12 guide-div fadein" id="wave14" style="display: none;">
-                                <h3>Test1</h3>
+                                <table class="table table-bordered table-responsive">
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th class="w-10">Wave</th>
+                                            <th class="w-15">Rec. Worker</th>
+                                            <th class="w-50">Strong Mercenaries this Wave</th>
+                                            <th class="w-50">Strong Units this Wave</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">1-2</td>
+                                            <td>Snail</td>
+                                            <td>Honeyflower, Antler</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-center">2</td>
+                                            <td>-</td>
+                                            <td>Whileshroom</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="text-center">2</td>
+                                            <td>Fiend, Lizard</td>
+                                            <td>Buzz, Ranger</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div class="col-sm-12 guide-div fadein" id="wave58" style="display: none;">
                                 <h3>Test2</h3>
