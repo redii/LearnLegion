@@ -30,6 +30,7 @@ function countChecks(j) {
     }
     if(total == 6) {
         showDiv('enemy-class-selection');
+        showDiv('result-div');
     }
 }
 
