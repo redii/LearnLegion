@@ -9,10 +9,6 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="ltd.css">
         <link rel="stylesheet" href="animations.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="ajax.js"></script>
     </head>
     <body>
 
@@ -62,7 +58,11 @@
                     <h4>Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.</h4>
                     <br>
                     <p style="margin-bottom: 0;">The main feature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills.</p>
-                    <p>Just start by selecting your class for the current game you're in...</p>
+                    <p>Just start by selecting your legion for the current game you're in...</p>
+                    <button type="button" onclick="getResults(0)">getResults(0)</button>
+                    <button type="button" onclick="getResults(1)">getResults(1)</button>
+                    <button type="button" onclick="getResults(2)">getResults(2)</button>
+                    <button type="button" onclick="test()">test()</button>
                 </div>
                 <div class="col-sm-4">
                     <br><br><br><br>
@@ -93,7 +93,7 @@
                     <!-- Step 1 | Select own class -->
                     <div class="guide-div fadein text-center" id="class-selection">
                         <div class="ltd-class-selector">
-                            <form name="form1">
+                            <form name="form1" id="form1">
                                 <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); incProgress('class');">
                                 <label class="ltd-class ltd-class-fix element" for="element" title="Element"></label>
 
@@ -212,7 +212,7 @@
                         </div>
                     </div>
 
-                    <!-- Step 2 | Select enemy class -->
+                    <!-- Step 2 | Select enemy units -->
                     <div class="guide-div fadein text-center" id="enemy-class-selection" style="display: none;">
                         <p>Great! Now select the units your <strong>enemy</strong> is using.</p>
                         <div class="ltd-unit-selector">
@@ -221,22 +221,22 @@
                                 <div>
                                     <label class="ltd-unit-class-icon element"></label>
 
-                                    <input type='checkbox' name='checkb' value="0" id="proton2" onchange="countChecks2(0);"/>
+                                    <input type='checkbox' name='checkb2' value="0" id="proton2" onchange="countChecks2(0);"/>
                                     <label class="ltd-unit proton" for="proton2" title="Proton"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="1" id="aquaspirit2" onchange="countChecks2(1);"/>
+                                    <input type='checkbox' name='checkb2' value="1" id="aquaspirit2" onchange="countChecks2(1);"/>
                                     <label class="ltd-unit aquaspirit" for="aquaspirit2" title="Aquaspirit"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="2" id="windhawk2" onchange="countChecks2(2);"/>
+                                    <input type='checkbox' name='checkb2' value="2" id="windhawk2" onchange="countChecks2(2);"/>
                                     <label class="ltd-unit windhawk" for="windhawk2" title="Windhawk"></label>
             
-                                    <input type='checkbox' name='checkb' value="3" id="mudman2" onchange="countChecks2(3);"/>
+                                    <input type='checkbox' name='checkb2' value="3" id="mudman2" onchange="countChecks2(3);"/>
                                     <label class="ltd-unit mudman" for="mudman2" title="Mudman"></label>
             
-                                    <input type='checkbox' name='checkb' value="4" id="disciple2" onchange="countChecks2(4);"/>
+                                    <input type='checkbox' name='checkb2' value="4" id="disciple2" onchange="countChecks2(4);"/>
                                     <label class="ltd-unit disciple" for="disciple2" title="Disciple"></label>
             
-                                    <input type='checkbox' name='checkb' value="5" id="firelord2" onchange="countChecks2(5);"/>
+                                    <input type='checkbox' name='checkb2' value="5" id="firelord2" onchange="countChecks2(5);"/>
                                     <label class="ltd-unit firelord" for="firelord2" title="Firelord"></label>
                                 </div>
 
@@ -244,22 +244,22 @@
                                 <div>
                                     <label class="ltd-unit-class-icon forsaken"></label>
 
-                                    <input type='checkbox' name='checkb' value="6" id="bonewarrior2" onchange="countChecks2(6);"/>
+                                    <input type='checkbox' name='checkb2' value="6" id="bonewarrior2" onchange="countChecks2(6);"/>
                                     <label class="ltd-unit bonewarrior" for="bonewarrior2" title="Bonewarrior"></label>
             
-                                    <input type='checkbox' name='checkb' value="7" id="gargoyle2" onchange="countChecks2(7);"/>
+                                    <input type='checkbox' name='checkb2' value="7" id="gargoyle2" onchange="countChecks2(7);"/>
                                     <label class="ltd-unit gargoyle" for="gargoyle2" title="Gargoyle"></label>
             
-                                    <input type='checkbox' name='checkb' value="8" id="gateguard2" onchange="countChecks2(8);"/>
+                                    <input type='checkbox' name='checkb2' value="8" id="gateguard2" onchange="countChecks2(8);"/>
                                     <label class="ltd-unit gateguard" for="gateguard2" title="Gateguard"></label>
             
-                                    <input type='checkbox' name='checkb' value="9" id="butcher2" onchange="countChecks2(9);"/>
+                                    <input type='checkbox' name='checkb2' value="9" id="butcher2" onchange="countChecks2(9);"/>
                                     <label class="ltd-unit butcher" for="butcher2" title="Butcher"></label>
             
-                                    <input type='checkbox' name='checkb' value="10" id="nightmare2" onchange="countChecks2(10);"/>
+                                    <input type='checkbox' name='checkb2' value="10" id="nightmare2" onchange="countChecks2(10);"/>
                                     <label class="ltd-unit nightmare" for="nightmare2" title="Nightmare"></label>
             
-                                    <input type='checkbox' name='checkb' value="11" id="lordofdeath2" onchange="countChecks2(11);"/>
+                                    <input type='checkbox' name='checkb2' value="11" id="lordofdeath2" onchange="countChecks2(11);"/>
                                     <label class="ltd-unit lordofdeath" for="lordofdeath2" title="Lord of Death"></label>
                                 </div>
 
@@ -267,22 +267,22 @@
                                 <div>
                                     <label class="ltd-unit-class-icon grove"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="12" id="buzz2" onchange="countChecks2(12);"/>
+                                    <input type='checkbox' name='checkb2' value="12" id="buzz2" onchange="countChecks2(12);"/>
                                     <label class="ltd-unit buzz" for="buzz2" title="Buzz"></label>
             
-                                    <input type='checkbox' name='checkb' value="13" id="ranger2" onchange="countChecks2(13);"/>
+                                    <input type='checkbox' name='checkb2' value="13" id="ranger2" onchange="countChecks2(13);"/>
                                     <label class="ltd-unit ranger" for="ranger2" title="Ranger"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="14" id="wileshroom2" onchange="countChecks2(14);"/>
+                                    <input type='checkbox' name='checkb2' value="14" id="wileshroom2" onchange="countChecks2(14);"/>
                                     <label class="ltd-unit wileshroom" for="wileshroom2" title="Whileshroom"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="15" id="honeyflower2" onchange="countChecks2(15);"/>
+                                    <input type='checkbox' name='checkb2' value="15" id="honeyflower2" onchange="countChecks2(15);"/>
                                     <label class="ltd-unit honeyflower" for="honeyflower2" title="Honeyflower"></label>
             
-                                    <input type='checkbox' name='checkb' value="16" id="antler2" onchange="countChecks2(16);"/>
+                                    <input type='checkbox' name='checkb2' value="16" id="antler2" onchange="countChecks2(16);"/>
                                     <label class="ltd-unit antler" for="antler2" title="Antler"></label>
             
-                                    <input type='checkbox' name='checkb' value="17" id="bananabunk2" onchange="countChecks2(17);"/>
+                                    <input type='checkbox' name='checkb2' value="17" id="bananabunk2" onchange="countChecks2(17);"/>
                                     <label class="ltd-unit bananabunk" for="bananabunk2" title="Bananabunk"></label>
                                 </div>
 
@@ -290,22 +290,22 @@
                                 <div>
                                     <label class="ltd-unit-class-icon mech"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="18" id="peewee2" onchange="countChecks2(18);"/>
+                                    <input type='checkbox' name='checkb2' value="18" id="peewee2" onchange="countChecks2(18);"/>
                                     <label class="ltd-unit peewee" for="peewee2" title="Peewee"></label>
             
-                                    <input type='checkbox' name='checkb' value="19" id="bazooka2" onchange="countChecks2(19);"/>
+                                    <input type='checkbox' name='checkb2' value="19" id="bazooka2" onchange="countChecks2(19);"/>
                                     <label class="ltd-unit bazooka" for="bazooka2" title="Bazooka"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="20" id="tempest2" onchange="countChecks2(20);"/>
+                                    <input type='checkbox' name='checkb2' value="20" id="tempest2" onchange="countChecks2(20);"/>
                                     <label class="ltd-unit tempest" for="tempest2" title="Tempest"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="21" id="aps2" onchange="countChecks2(21);"/>
+                                    <input type='checkbox' name='checkb2' value="21" id="aps2" onchange="countChecks2(21);"/>
                                     <label class="ltd-unit aps" for="aps2" title="APS"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="22" id="berserker2" onchange="countChecks2(22);"/>
+                                    <input type='checkbox' name='checkb2' value="22" id="berserker2" onchange="countChecks2(22);"/>
                                     <label class="ltd-unit berserker" for="berserker2" title="Berserker"></label>
                                     
-                                    <input type='checkbox' name='checkb' value="23" id="millennium2" onchange="countChecks2(23);"/>
+                                    <input type='checkbox' name='checkb2' value="23" id="millennium2" onchange="countChecks2(23);"/>
                                     <label class="ltd-unit millennium" for="millennium2" title="Millennium"></label>
                                 </div>
                             </form>
@@ -336,19 +336,19 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr id="wave1">
                                             <td class="text-center">1</td>
                                             <td class="text-center">1-2</td>
                                             <td>Snail</td>
                                             <td>Honeyflower, Antler</td>
                                         </tr>
-                                        <tr>
+                                        <tr id="wave2">
                                             <td class="text-center">2</td>
                                             <td class="text-center">2</td>
                                             <td>-</td>
                                             <td>Whileshroom</td>
                                         </tr>
-                                        <tr>
+                                        <tr id="wave3">
                                             <td class="text-center">3</td>
                                             <td class="text-center">2</td>
                                             <td>Fiend, Lizard</td>
@@ -372,10 +372,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- Spaceholder -->
                 <div class="col-sm-1">
-                    <!-- Spaceholder -->
                 </div>
             </div>
         </div>
     </body>
+
+    <!-- Load JS in the end for performance reasons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="ajax.js"></script>
+    <script src="ltd.js"></script>
 </html>

@@ -1,0 +1,172 @@
+{
+    "1": {
+        "creature": "Crabs",
+        "off": "Pierce",
+        "def": "Fortified",
+        "type": "normal"
+    },
+    "2": {
+        "creature": "Wales",
+        "off": "Impact",
+        "def": "Arcane",
+        "type": "normal"
+    },
+    "3": {
+        "creature": "Hoppers",
+        "off": "Magic",
+        "def": "Natural",
+        "type": "normal"
+    },
+    "4": {
+        "creature": "Flying Chickens",
+        "off": "Impact",
+        "def": "Swift",
+        "type": "normal"
+    },
+    "5": {
+        "creature": "Scorpions",
+        "off": "Pierce",
+        "def": "Natural",
+        "type": "miniboss"
+    },
+    "6": {
+        "creature": "Rockos",
+        "off": "Impact",
+        "def": "Fortified",
+        "type": "normal",
+        "abilities": {
+            "1": {
+                "name": "Impale",
+                "desc": "Each attack has a 15% chance to stun its target for 1 second."
+            }
+        }
+    },
+    "7": {
+        "creature": "Sludges",
+        "off": "Magic",
+        "def": "Arcane",
+        "type": "normal"
+    },
+    "8": {
+        "creature": "Kobras",
+        "off": "Magic",
+        "def": "Swift",
+        "type": "normal"
+    },
+    "9": {
+        "creature": "Carapaces",
+        "off": "Pierce",
+        "def": "Fortified",
+        "type": "normal",
+        "abilities": {
+            "1": {
+                "name": "Deflection",
+                "desc": "Reduces damage taken from ranged attacks by 15%."
+            }
+        }
+    },
+    "10": {
+        "creature": "Granddaddy",
+        "off": "Impact",
+        "def": "Arcane",
+        "type": "boss",
+        "abilities": {
+            "1": {
+                "name": "Reconstructive Exoskeleton",
+                "desc": "Regenerates 1% max health per second out of combat."
+            },
+            "2": {
+                "name": "Boss Unit",
+                "desc": "Reduces the duration of most disables and effects."
+            }
+        }
+    },
+    "11": {
+        "creature": "Quill Shooters",
+        "off": "Pierce",
+        "def": "Natural",
+        "type": "normal"
+    },
+    "12": {
+        "creature": "Mantises",
+        "off": "Pierce",
+        "def": "Swift",
+        "type": "normal"
+    },
+    "13": {
+        "creature": "Drill Golems",
+        "off": "Impact",
+        "def": "Fortified",
+        "type": "normal"
+    },
+    "14": {
+        "creature": "Killer Slugs",
+        "off": "Magic",
+        "def": "Arcane",
+        "type": "normal",
+        "abilities": {
+            "1": {
+                "name": "Spell Resistance",
+                "desc": "Reduces damage taken from spells by 25%."
+            }
+        }
+    },
+    "15": {
+        "creature": "Quadrapuses",
+        "off": "Magic",
+        "def": "Natural",
+        "type": "miniboss"
+    },
+    "16": {
+        "creature": "Cardinals",
+        "off": "Impact",
+        "def": "Swift",
+        "type": "normal"
+    },
+    "17": {
+        "creature": "Metal Dragons",
+        "off": "Pierce",
+        "def": "Arcane",
+        "type": "normal"
+    },
+    "18": {
+        "creature": "Dire Toads",
+        "off": "Pierce",
+        "def": "Swift",
+        "type": "normal",
+        "abilities": {
+            "1": {
+                "name": "Bufotoxin",
+                "desc": "Attacks slow movement speed by 75% and deal 350 Magic damage over 3 seconds."
+            }
+        }
+    },
+    "19": {
+        "creature": "Wale Chiefs",
+        "off": "Impact",
+        "def": "Natural",
+        "type": "normal"
+    },
+    "20": {
+        "creature": "Maccabeus",
+        "off": "Magic",
+        "def": "Fortified",
+        "type": "boss",
+        "abilities": {
+            "1": {
+                "name": "Immolate",
+                "desc": "Each attack bounces to up to 3 nearby enemies, dealing 50% of the damage."
+            },
+            "2": {
+                "name": "Boss Unit",
+                "desc": "Reduces the duration of most disables and effects."
+            }
+        }
+    },
+    "21": {
+        "creature": "Legion Lord",
+        "off": "Pure",
+        "def": "Immaterial",
+        "type": "miniboss"
+    }
+}

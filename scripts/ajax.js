@@ -60,12 +60,12 @@ function countChecks(j) {
 // countChecks2() for form3
 function countChecks2(j) {
     var total = 0
-    for(var i=0; i < document.form3.checkb.length; i++) {
-        if(document.form3.checkb[i].checked) {
+    for(var i=0; i < document.form3.checkb2.length; i++) {
+        if(document.form3.checkb2[i].checked) {
             total = total + 1
         }
         if(total > 6) {
-            document.form3.checkb[j].checked = ''
+            document.form3.checkb2[j].checked = ''
             return false
         }
     }
@@ -89,10 +89,6 @@ function countChecks2(j) {
             document.getElementById('progress-bar').style.width = '100%'
             break
     }
-}
-
-function test() {
-    alert(test)
 }
 
 // 1. Show all strong Mercs for this Round 2. Highlight those which are especially strong against your enemy units

@@ -1,0 +1,127 @@
+{
+    "static": {
+        "1": ["Snail"],
+        "2": ["Fiend"],
+        "3": ["Brute", "Lizard", "Fiend"],
+        "4": ["Dino", "Brute"],
+        "5": ["Drake", "Dino", "Brute", "Dragon Turtle"],
+        "6": ["Dino", "Safety Mole", "Brute", "Drake", "Dragon Turtle"],
+        "7": ["Hermit", "Safety Mole", "Mimic", "Fiend"],
+        "8": ["Ghost Knight", "Dino", "Snail"],
+        "9": ["Pack Leader", "Hermit", "Safety Mole", "Four Eyes"],
+        "10": ["Mimic", "Drake", "Four Eyes"],
+        "11": ["Kraken", "Ghost Knight", "Dino", "Snail"],
+        "12": ["Centaur", "Pack Leader", "Hermit", "Safety Mole", "Four Eyes"],
+        "13": ["Centaur", "Four Eyes", "Safety Mole", "Shaman", "Hermit"],
+        "14": ["Centaur", "Four Eyes", "Safety Mole", "Hermit", "Pack Leader"],
+        "15": ["Kraken", "Ghost Knight", "Dinos", "Snail", "Centaur", "Hermit"],
+        "16": ["Four Eyes", "Pack Leader", "Hermit", "Safety Mole"],
+        "17": ["Four Eyes", "Pack Leader", "Hermit", "Safety Mole"],
+        "18": ["Kraken", "Ghost Knight", "Centaur", "Dino"],
+        "19": ["Four Eyes", "Centaur", "Pack Leader", "Safety Mole", "Kraken", "Shaman"],
+        "20": ["Shaman", "Centaur", "Four Eyes", "Kraken", "Drake", "Lizards"],
+        "21": ["Shaman", "Centaur", "Four Eyes", "Kraken"]
+    },
+    "dynamic": {
+        "snail": {
+            "name": "Snail",
+            "off": "Impact",
+            "def": "Fortified"
+        },
+        "lizard": {
+            "name": "Lizard",
+            "off": "Pierce",
+            "def": "Natural"
+        },
+        "fiend": {
+            "name": "Fiend",
+            "off": "Pierce",
+            "def": "Swift"
+        },
+        "brute": {
+            "name": "Brute",
+            "off": "Impact",
+            "def": "Natural",
+            "ability1": "Maul",
+            "ability1_desc": "Each attack has a 25% chance to stun its target for 1 second."
+        },
+        "dragonturtle": {
+            "name": "Dragon Turtle",
+            "off": "Magic",
+            "def": "Arcane"
+        },
+        "safetymole": {
+            "name": "Safety Mole",
+            "off": "Impact",
+            "def": "Natural",
+            "ability1": "Safety Aura",
+            "ability1_desc": "Nearby allies take 5 reduced damage from all sources."
+        },
+        "dino": {
+            "name": "Dino",
+            "off": "Pierce",
+            "def": "Fortified"
+        },
+        "hermit": {
+            "name": "Hermit",
+            "off": "Magic",
+            "def": "Natural",
+            "ability1": "Healing Aura",
+            "ability1_desc": "Nearby allies recover 8 health per second."
+        },
+        "drake": {
+            "name": "Drake",
+            "off": "Magic",
+            "def": "Swift"
+        },
+        "mimic": {
+            "name": "Mimic",
+            "off": "Pierce",
+            "def": "Arcane"
+        },
+        "packleader": {
+            "name": "Pack Leader",
+            "off": "Impact",
+            "def": "Fortified",
+            "ability1": "Leadership Aura",
+            "ability1_desc": "Increases the attack damage of nearby allies by 10."
+        },
+        "ghostknight": {
+            "name": "Ghost Knight",
+            "off": "Impact",
+            "def": "Swift",
+            "ability1": "Ghost Walker",
+            "ability1_desc": "Reduces damage taken from autoattacks by 50%."
+        },
+        "foureyes": {
+            "name": "Four Eyes",
+            "off": "Magic",
+            "def": "Swift",
+            "ability1": "Death Stare",
+            "ability1_desc": "Each attack amplifies damage taken by 8% (2% against the king), stacking up to 9 times."
+        },
+        "centaur": {
+            "name": "Centaur",
+            "off": "Pierce",
+            "def": "Natural",
+            "ability1": "Cleave",
+            "ability1_desc": "Each attack deals 50% (25% to flying) damage to nearby enemies."
+        },
+        "shaman": {
+            "name": "Shaman",
+            "off": "Magic",
+            "def": "Swift",
+            "ability1": "Blood Rush",
+            "ability1_desc": "Increases attack speed of an ally by 20% for 7 seconds."
+        },
+        "kraken": {
+            "name": "Kraken",
+            "off": "Impact",
+            "def": "Arcane",
+            "ability1": "Spell Resistance",
+            "ability1_desc": "Reduces damage taken from spells by 50%.",
+            "ability2": "Boss Unit",
+            "ability2_desc": "Reduces the duration of most disables and effects."
+        }
+    }
+}

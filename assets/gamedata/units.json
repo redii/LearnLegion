@@ -1,0 +1,646 @@
+{
+    "proton": {
+        "name": "Proton",
+        "tier": "T1",
+        "class": "Element",
+        "off": "Pure",
+        "def": "Immaterial",
+        "upgrade": ["Atom"]
+    },
+    "atom": {
+        "name": "Atom",
+        "tier": "T1U",
+        "class": "Element",
+        "off": "Pure",
+        "def": ["Immaterial"]
+    },
+    "aquaspirit": {
+        "name": "Aqua Spirit",
+        "tier": "T2",
+        "class": "Element",
+        "off": "Pierce",
+        "def": "Arcane",
+        "upgrade": ["Fire Elemental", "Rogue Wave"],
+        "abilities": {
+            "1": {
+                "name": "Water Bounce",
+                "desc": "Each attack bounces to a nearby enemy."
+            }
+        }
+    },
+    "fireelemental": {
+        "name": "Fire Elemental",
+        "tier": "T2U",
+        "class": "Elemental",
+        "off": "Pierce",
+        "def": "Arcane",
+        "abilities": {
+            "1": {
+                "name": "Combustion",
+                "desc": "Each attack bounces to a nearby enemy. Targets marked with Delusion take 150 magic damage over 3 seconds."
+            }
+        }
+    },
+    "roguewave": {
+        "name": "Rogue Wave",
+        "tier": "T2U",
+        "class": "Elemental",
+        "off": "Pierce",
+        "def": "Arcane",
+        "abilities": {
+            "1": {
+                "name": "Delusion",
+                "desc": "Each attack bounces to a nearby enemy and applies Delusion (ignited by Combustion)."
+            }
+        }
+    },
+    "windhawk": {
+        "name": "Windhawk",
+        "tier": "T3",
+        "class": "Elemental",
+        "off": "Impact",
+        "def": "Natural",
+        "upgrade": ["Violet"]
+    },
+    "violet": {
+        "name": "Violet",
+        "tier": "T3U",
+        "class": "Elemental",
+        "off": "Impact",
+        "def": "Natural",
+        "abilities": {
+            "1": {
+                "name": "Lightning Strike",
+                "desc": "Shocks up to 5 nearby enemies for 140 magic damage."
+            }
+        }
+    },
+    "mudman": {
+        "name": "Mudman",
+        "tier": "T4",
+        "class": "Element",
+        "off": "Impact",
+        "def": "Fortified",
+        "upgrade": ["Golem"]
+    },
+    "golem": {
+        "name": "Golem",
+        "tier": "T4U",
+        "class": "Element",
+        "off": "Impact",
+        "def": "Fortified"
+    },
+    "disciple": {
+        "name": "Disciple",
+        "tier": "T5",
+        "class": "Element",
+        "off": "Pierce",
+        "def": "Swift",
+        "upgrade": ["Starcaller"],
+        "abilities": {
+            "1": {
+                "name": "Mana Burst",
+                "desc": "Deals 600 Pure damage to a single target."
+            }
+        }
+    },
+    "starcaller": {
+        "name": "Starcaller",
+        "tier": "T5U",
+        "class": "Element",
+        "off": "Pierce",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Amplify Magic",
+                "desc": "Increases the mana regeneration of nearby allies by 75%."
+            },
+            "2": {
+                "name": "Asteroid",
+                "desc": "Deals 1200 Pure damage to a single target."
+            }
+        }
+    },
+    "firelord": {
+        "name": "Fire Lord",
+        "tier": "T6",
+        "class": "Element",
+        "off": "Magic",
+        "def": "Swift",
+        "upgrade": ["Fenix"],
+        "abilities": {
+            "1": {
+                "name": "Molten Shield",
+                "desc": "Absorbs 50% of incoming damage from each attack."
+            }
+        }
+    },
+    "fenix": {
+        "name": "Fenix",
+        "tier": "T6U",
+        "class": "Element",
+        "off": "Magic",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Overheat",
+                "desc": "Deals 1% bonus damage for each 1% missing mana."
+            },
+            "2": {
+                "name": "Prismatic Shield",
+                "desc": "Absorbs 75% of incoming damage from each attack."
+            }
+        }
+    },
+    "bonewarrior": {
+        "name": "Bone Warrior",
+        "tier": "T1",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Swift",
+        "upgrade": ["Bone Crusher", "Dark Mage", "Fire Archer"],
+        "abilities": {
+            "1": {
+                "name": "Skeletal Regeneration",
+                "desc": "Regenerates 5% missing health per second."
+            }
+        }
+    },
+    "bonecrusher": {
+        "name": "Bone Crusher",
+        "tier": "T1U",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Skeletal Regeneration",
+                "desc": "Regenerates 5% missing health per second."
+            }
+        }
+    },
+    "darkmage": {
+        "name": "Dark Mage",
+        "tier": "T1U",
+        "class": "Forsaken",
+        "off": "Magic",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Mind Warp",
+                "desc": "Increase an ally's attackspeed by 80% and inflicts 4% current health damage per second for 7 seconds."
+            },
+            "2": {
+                "name": "Skeletal Regeneration",
+                "desc": "Regenerates 5% missing health per second."
+            }
+        }
+    },
+    "firearcher": {
+        "name": "Fire Archer",
+        "tier": "T1U",
+        "class": "Forsaken",
+        "off": "Pierce",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Flaming Arrows",
+                "desc": "Each attack deals 40 bonus magic damage."
+            },
+            "2": {
+                "name": "Skeletal Regeneration",
+                "desc": "Regenerates 5% missing health per second."
+            }
+        }
+    },
+    "gargoyle": {
+        "name": "Gargoyle",
+        "tier": "T2",
+        "class": "Forsaken",
+        "off": "Magic",
+        "def": "Arcane",
+        "upgrade": ["Green Devil"],
+        "abilities": {
+            "1": {
+                "name": "Stone Skin",
+                "desc": "Takes 50% reduced damage."
+            }
+        }
+    },
+    "greendevil": {
+        "name": "Green Devil",
+        "tier": "T2U",
+        "class": "Forsaken",
+        "off": "Magic",
+        "def": "Arcane",
+        "abilities": {
+            "1": {
+                "name": "Stone Skin",
+                "desc": "Takes 50% reduced damage."
+            },
+            "2": {
+                "name": "Lacerate",
+                "desc": "Each attack amplifies damage taken by 2%, stacking up to 9 times."
+            }
+        }
+    },
+    "gateguard": {
+        "name": "Gateguard",
+        "tier": "T3",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Fortified",
+        "upgrade": ["Harbinger"],
+        "abilities": {
+            "1": {
+                "name": "Summon Chaos Hound",
+                "desc": "Summons a Chaos Hound."
+            }
+        }
+    },
+    "harbinger": {
+        "name": "Harbinger",
+        "tier": "T3U",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Summon Chaos Hound",
+                "desc": "Summons a Chaos Hound."
+            },
+            "2": {
+                "name": "Crushing Blow",
+                "desc": "Each attack has a 20% chance to stun its target for 1 second."
+            }
+        }
+    },
+    "butcher": {
+        "name": "Butcher",
+        "tier": "T4",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Natural",
+        "upgrade": ["Head Chef"],
+        "ablities": {
+            "1": {
+                "name": "Leech",
+                "desc": "Grants 5 life on-hit and 10% lifesteal to nearby allies."
+            }
+        }
+    },
+    "headchef": {
+        "name": "Head Chef",
+        "tier": "T4U",
+        "class": "Forsaken",
+        "off": "Impact",
+        "def": "Natural",
+        "abilities": {
+            "1": {
+                "name": "Cannibalism",
+                "desc": "Grants 10 life on-hit and 15% lifesteal to nearby allies."
+            },
+            "2": {
+                "name": "Skull Stew",
+                "desc": "Heals a nearby ally for 300 + 10% maximum health over 3 seconds."
+            } 
+        }
+    },
+    "nightmare": {
+        "name": "Nightmare",
+        "tier": "T5",
+        "class": "Forsaken",
+        "off": "Pierce",
+        "def": "Swift",
+        "upgrade": ["Doppelganger"]
+    },
+    "doppelganger": {
+        "name": "Doppelganger",
+        "tier": "T5U",
+        "class": "Forsaken",
+        "off": "Pierce",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Fatality",
+                "desc": "Each attack increases bonus damage by 1."
+            }
+        }
+    },
+    "lordofdeath": {
+        "name": "Lord of Death",
+        "tier": "T6",
+        "class": "Forsaken",
+        "off": "Magic",
+        "def": "Swift",
+        "upgrade": ["Hades"],
+        "abilities": {
+            "1": {
+                "name": "Conjure Dragon",
+                "desc": "Summons an Undead Dragon."
+            }
+        }
+    },
+    "hades": {
+        "name": "Hades",
+        "tier": "T6U",
+        "class": "Forsaken",
+        "off": "Magic",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Raise Imp",
+                "desc": "Summons an Imp."
+            },
+            "2": {
+                "name": "Necromancy",
+                "desc": "Restores 1 mana when a nearby unit dies."
+            }
+        }
+    },
+    "buzz": {
+        "name": "Buzz",
+        "tier": "T1",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Natural",
+        "upgrades": ["Consort"],
+        "abilities": {
+            "1": {
+                "name": "Anaphylaxis",
+                "desc": "Stuns its killer for 0.5 seconds and deals 60 magic damage over 3 seconds."
+            }
+        }
+    },
+    "consort": {
+        "name": "Consort",
+        "tier": "T1U",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Natural"
+    },
+    "ranger": {
+        "name": "Ranger",
+        "tier": "T2",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Swift",
+        "upgrades": ["Daphne"],
+        "abilities": {
+            "1": {
+                "name": "Mark Target",
+                "desc": "Each attack amplifies damage taken by 1% (0.5% against bosses), stacking up to 9 times."
+            }
+        }
+    },
+    "daphne": {
+        "name": "Daphne",
+        "tier": "T2U",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Nature's Touch",
+                "desc": "Slows an enemy by 30% (15% against bosses) and reduces its damage by 2% (1% against bosses), stacking up to 9 times."
+            }
+        }
+    },
+    "wileshroom": {
+        "name": "Wileshroom",
+        "tier": "T3",
+        "class": "Grove",
+        "off": "Impact",
+        "def": "Arcane",
+        "upgrades": ["Canopie"]
+    },
+    "canopie": {
+        "name": "Canopie",
+        "tier": "T3U",
+        "class": "Grove",
+        "off": "Impact",
+        "def": "Arcane"
+    },
+    "honeyflower": {
+        "name": "Honeyflower",
+        "tier": "T4",
+        "class": "Grove",
+        "off": "Magic",
+        "def": "Natural",
+        "upgrades": ["Deathcap"],
+        "abilities": {
+            "1": {
+                "name": "Fragrance",
+                "desc": "Deals 7 + 0.4% (0.2% against bosses) max health magic damage per second to nearby enemies."
+            }
+        }
+    },
+    "deathcap": {
+        "name": "Deathcap",
+        "tier": "T4U",
+        "class": "Grove",
+        "off": "Magic",
+        "def": "Natural",
+        "abilities": {
+            "1": {
+                "name": "Noxious Scent",
+                "desc": "Deals 30 + 0.6% (0.3% against bosses) max health magic damage per second to nearby enemies."
+            }
+        }
+    },
+    "antler": {
+        "name": "Antler",
+        "tier": "T5",
+        "class": "Grove",
+        "off": "Impact",
+        "def": "Natural",
+        "upgrades": ["Whitemane"]
+    },
+    "whitemane": {
+        "name": "Whitemane",
+        "tier": "T5U",
+        "class": "Grove",
+        "off": "Impact",
+        "def": "Natural",
+        "abilities": {
+            "1": {
+                "name": "Council",
+                "desc": "Nearby allies take 5 + 15% reduced damage from all sources."
+            }
+        }
+    },
+    "bananabunk": {
+        "name": "Banana Bunk",
+        "tier": "T6",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Fortified",
+        "upgrades": ["Banana Haven"],
+        "abilities": {
+            "1": {
+                "name": "Barbs",
+                "desc": "Whenever this unit is attacked, it reflects 20 + 10% damage taken back as Pierce damage."
+            }
+        }
+    },
+    "bananahaven": {
+        "name": "Banana Haven",
+        "tier": "T6U",
+        "class": "Grove",
+        "off": "Pierce",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Thorns",
+                "desc": "Whenever this unit is attacked, it reflects 50 + 15% damage taken back as Pierce damage."
+            },
+            "2": {
+                "name": "Tribal Warfare",
+                "desc": "Attacks up to 3 units at once but can still strike the same unit with multiple bananas."
+            }
+        }
+    },
+    "peewee": {
+        "name": "Peewee",
+        "tier": "T1",
+        "class": "Mech",
+        "off": "Pierce",
+        "def": "Arcane",
+        "upgrades": ["Veteran"]
+    },
+    "veteran": {
+        "name": "Veteran",
+        "tier": "T1U",
+        "class": "Mech",
+        "off": "Perce",
+        "def": "Arcane"
+    },
+    "bazooka": {
+        "name": "Bazooka",
+        "tier": "T2",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Swift",
+        "upgrades": ["Pyro", "Zeus"]
+    },
+    "pyro": {
+        "name": "Pyro",
+        "tier": "T2U",
+        "class": "Mech",
+        "off": "Magic",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Pyromancy",
+                "desc": "Each attack deals 50% (25% to flying) damage to nearby enemies."
+            }
+        }
+    },
+    "zeus": {
+        "name": "Zeus",
+        "tier": "T2U",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Power Surge",
+                "desc": "Deal 100 bonus magic damage to a single target."
+            },
+            "2": {
+                "name": "Magnetic Accelerator",
+                "desc": "Restores 2 mana with each attack."
+            }
+        }
+    },
+    "tempest": {
+        "name": "Tempest",
+        "tier": "T3",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Fortified",
+        "upgrades": ["Leviathan"]
+    },
+    "leviathan": {
+        "name": "Leviathan",
+        "tier": "T3U",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Aerial Command",
+                "desc": "Increase the damage of nearby flying allies by 5 + 10%."
+            }
+        }
+    },
+    "aps": {
+        "name": "APS",
+        "tier": "T4",
+        "class": "Mech",
+        "off": "Pierce",
+        "def": "Fortified",
+        "upgrades": ["MPS"],
+        "abilities": {
+            "1": {
+                "name": "Energize",
+                "desc": "Increase the damage of nearby flying allies by 5 + 10%."
+            }
+        }
+    },
+    "mps": {
+        "name": "MPS",
+        "tier": "T4U",
+        "class": "Mech",
+        "off": "Pierce",
+        "def": "Fortified",
+        "abilities": {
+            "1": {
+                "name": "Mythium Core",
+                "desc": "Increases the attack speed of nearby allies by 18% (24% for melee)."
+            }
+        }
+    },
+    "berserker": {
+        "name": "Berserker",
+        "tier": "T5",
+        "class": "Mech",
+        "off": "Pierce",
+        "def": "Swift",
+        "upgrades": ["Fatalizer"],
+        "abilities":{
+            "1": {
+                "name": "Brawler",
+                "desc": "Deals 30 (60 to bosses) Magic damage per attack."
+            }
+        }  
+    },
+    "fatalizer": {
+        "name": "Fatalizer",
+        "tier": "T5U",
+        "class": "Mech",
+        "off": "Pierce",
+        "def": "Swift",
+        "abilities": {
+            "1": {
+                "name": "Duelist",
+                "desc": "Deals 80 (160 to bosses) Magic damage per attack."
+            }
+        }
+    },
+    "millennium": {
+        "name": "Millennium",
+        "tier": "T6",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Arcane",
+        "upgrades": ["Doomsday Machine"]
+    },
+    "doomsdaymachine": {
+        "name": "Doomsday Machine",
+        "tier": "T6U",
+        "class": "Mech",
+        "off": "Impact",
+        "def": "Arcane"
+    }
+}

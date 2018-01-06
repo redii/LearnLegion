@@ -1,0 +1,24 @@
+{
+    "classes": {
+        "element": {
+            "units": ["proton", "atom", "aquaspirit", "fireelemental", "rougewave", "windhawk", "violet", "mudman", "golem", "disciple", "starcaller", "firelord", "fenix"],
+            "units_vanilla": ["proton", "aquaspirit", "windhawk", "mudman", "disciple", "firelord"],
+            "units_upped": ["atom", "fireelemental", "rougewave", "violet", "golem", "starcaller", "fenix"]
+        },
+        "forsaken": {
+            "units": ["bonewarrior", "bonecrusher", "darkmage", "firearcher", "gargoyle", "greendevil", "gateguard", "harbinger", "butcher", "headchef", "nightmare", "doppelganger", "lordofdeath", "hades"],
+            "units_vanilla": ["bonewarrior", "gargoyle", "gateguard", "butcher", "nightmare", "lordofdeath"],
+            "units_upped": ["bonecrusher", "darkmage", "firearcher", "greendevil", "harbinger", "headchef", "doppelganger", "hades"]
+        },
+        "grove": {
+            "units": ["buzz", "consort", "ranger", "daphne", "wileshroom", "canopie", "honeyflower", "deathcap", "antler", "whitemane", "bananabunk", "bananahaven"],
+            "units_vanilla": ["buzz", "ranger", "wileshroom", "honeyflower", "antler", "bananabunk"],
+            "units_upped": ["consort", "daphne", "canopie", "deathcap", "whitemane", "bananahaven"]
+        },
+        "mech": {
+            "units": ["peewee", "veteran", "bazooka", "pyro", "zeus", "tempest", "leviathan", "aps", "mps", "berserker", "fatalizer", "millennium", "doomsdaymachine"],
+            "units_vanilla": ["peewee", "bazooka", "tempest", "aps", "berserker", "millennium"],
+            "units_upped": ["veteran", "pyro", "zeus", "leviathan", "mps", "fatalizer", "doomsdaymachine"]
+        }
+    }
+}
