@@ -2,9 +2,8 @@ var units = []
 var enemyunits = []
 
 function getResults(type) {
-    if(units == undefined) {
-        data = httpGet('http://noc.redii.pw:3001/db')
-    }
+    data = httpGet('http://noc.redii.pw:3001/db')
+    
     checkUnits(type)
 }
 
