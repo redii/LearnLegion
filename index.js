@@ -10,4 +10,4 @@ app.get('/',function(req,res) {
     //It will find and locate index.html from View or Scripts
 });
 
-app.listen(8080, 'localhost')
+app.listen(80, 'localhost')

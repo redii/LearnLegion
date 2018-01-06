@@ -50,6 +50,7 @@ function countChecks(j) {
             document.getElementById('progress-bar').style.width = '55%'
             break
         case 6:
+            getResults(1)
             document.getElementById('progress-bar').style.width = '61%'
             showDiv('enemy-class-selection')
             showDiv('result-div')
@@ -71,21 +72,27 @@ function countChecks2(j) {
     }
     switch (total) {
         case 1:
+            getResults(2)
             document.getElementById('progress-bar').style.width = '68%'
             break
         case 2:
+            getResults(2)
             document.getElementById('progress-bar').style.width = '74%'
             break
         case 3:
+            getResults(2)
             document.getElementById('progress-bar').style.width = '81%'
             break
         case 4:
+            etResults(2)
             document.getElementById('progress-bar').style.width = '87%'
             break
         case 5:
+            getResults(2)
             document.getElementById('progress-bar').style.width = '94%'
             break
         case 6:
+            getResults(2)
             document.getElementById('progress-bar').style.width = '100%'
             break
     }
