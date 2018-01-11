@@ -1,4 +1,4 @@
-/* Bootstrap Classes */
+/* BOOTSTRAP OVERWRITE */
 
 .progress {
     border-radius: 0;
@@ -10,7 +10,16 @@
     margin-top: 3%;
 }
 
-/* own stuff */
+.alert {
+    margin-top: 15px;
+    width: 60%;
+}
+
+/* OWN CSS */
+
+.welcome {
+    margin-top: 15px;
+}
 
 .guide-div {
     margin-top: 3%;
@@ -21,6 +30,8 @@
     text-align: center;
 }
 
-#test {
-    background-color: grey;
+.ads1 {
+    height: 90px;
+    width: 728px;
+    background-color: beige;
 }

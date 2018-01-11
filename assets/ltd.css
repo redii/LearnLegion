@@ -36,7 +36,7 @@
 
 .ltd-class-selector {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: black;
     border-radius: 10px;
 }
@@ -93,7 +93,7 @@
 
 .ltd-unit-selector {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: black;
     border-radius: 10px;
 }

@@ -1,3 +1,4 @@
+// FUNCTIONS TO HIDE/SHOW DIV
 function showDiv(id) {
     if(document.getElementById(id).style.display=='none') {
       document.getElementById(id).style.display='block'
@@ -10,6 +11,13 @@ function hideDiv(id) {
     }
 }
 
+// FUNCTION TO DISMISS ALERT MESSAGE
+function dismissAlert() {
+    document.getElementById('alert').classList.add('dismiss-alert')
+    document.getElementById('welcome').classList.add('dismiss-welcome')
+}
+
+// FUNCTION TO INCREASE PROGRESSBAR
 function incProgress(j) {
     switch (j) {
         case 'class':
@@ -21,7 +29,7 @@ function incProgress(j) {
         }
 }
 
-// countChecks() for form2
+// COUNT CHECKS FOR MM-SELECT (FORM2)
 function countChecks(j) {
     var total = 0
     for(var i=0; i < document.form2.checkb.length; i++) {
@@ -50,7 +58,7 @@ function countChecks(j) {
             document.getElementById('progress-bar').style.width = '55%'
             break
         case 6:
-            getResults(1)
+            getUnits(1)
             document.getElementById('progress-bar').style.width = '61%'
             showDiv('enemy-class-selection')
             showDiv('result-div')
@@ -58,7 +66,7 @@ function countChecks(j) {
     }
 }
 
-// countChecks2() for form3
+// COUNT CHECKS FOR ENEMY-SELECT (FORM3)
 function countChecks2(j) {
     var total = 0
     for(var i=0; i < document.form3.checkb2.length; i++) {
@@ -72,27 +80,27 @@ function countChecks2(j) {
     }
     switch (total) {
         case 1:
-            getResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '68%'
             break
         case 2:
-            getResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '74%'
             break
         case 3:
-            getResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '81%'
             break
         case 4:
-            etResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '87%'
             break
         case 5:
-            getResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '94%'
             break
         case 6:
-            getResults(2)
+            getUnits(2)
             document.getElementById('progress-bar').style.width = '100%'
             break
     }

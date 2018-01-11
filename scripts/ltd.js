@@ -1,12 +1,10 @@
+// DECLARING GLOBAL VARIABLES
+//==========================================================
 var units = []
 var enemyunits = []
 
-function getResults(type) {
-    data = httpGet('http://noc.redii.pw:3001/db')
-    
-    checkUnits(type)
-}
-
+// FUNCTION TO GET STATIC GAMEDATA FROM API
+// ==========================================================
 function httpGet(url) {
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.open("GET", url, false) // true/false for a-/synchronous request
@@ -15,9 +13,14 @@ function httpGet(url) {
     return JSON.parse(xmlHttp.responseText)
 }
 
-function checkUnits(type) {
+// GET UNITS-ARRAYS BY TYPE
+// ==========================================================
+async function getUnits(type) {
+    data = await httpGet('http://noc.redii.pw:3001/db')
+
     switch(type) {
         case 0:
+            units = []
             var radios = document.getElementsByName('class-select')
             for(i = 0; i < document.getElementById('form1').length - 1; i++) {
                 if(radios[i].checked) {
@@ -41,6 +44,7 @@ function checkUnits(type) {
             break
 
         case 1:
+            units = []
             for(i = 0; i < document.getElementsByName('checkb').length; i++) {
                 if(document.getElementsByName('checkb')[i].checked == true) {
                     units.push(document.getElementsByName('checkb')[i].id)
@@ -50,6 +54,7 @@ function checkUnits(type) {
             break
 
         case 2:
+            enemyunits = []
             for(i = 0; i < document.getElementsByName('checkb2').length; i++) {
                 if(document.getElementsByName('checkb2')[i].checked == true) {
                     enemyunits.push(document.getElementsByName('checkb2')[i].id.slice(0, -1))
@@ -60,6 +65,7 @@ function checkUnits(type) {
     }
 }
 
+// TEST FUNCTION
 function test() {
     console.log(units)
 }

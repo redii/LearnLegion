@@ -1,3 +1,5 @@
+/* PURE CSS FADEIN*/
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -34,3 +36,31 @@
          -o-animation: fadein 2s;
             animation: fadein 2s;
 }
+
+
+/* ALTERNATIVE CSS FOR FADEIN/OUT */
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+/* ROLLIN/OUT CSS PART (WORKS ONLY WITH JS) */
+.dismiss {
+    overflow: auto;
+    transition: all 1.5s ease-out;
+}
+
+.dismiss-alert {
+    margin-top: -300px;
+}
+
+.dismiss-welcome {
+    padding-top: 235px;
+}
+

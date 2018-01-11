@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <!-- HEADER -->
+    <head>    
         <title>LearnLegion</title>
         <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
         <meta charset="utf-8">
@@ -10,9 +11,10 @@
         <link rel="stylesheet" href="ltd.css">
         <link rel="stylesheet" href="animations.css">
     </head>
+    <!-- BODY -->
     <body>
 
-        <!-- Navbar -->
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <a class="navbar-brand" href="#">LearnLegion</a>
             
@@ -40,34 +42,39 @@
             </div>
         </nav>
 
-        <!-- Progressbar -->
+        <!-- PROGRESSBAR -->
         <div class="progress fixed-top">
             <div class="progress-bar" id="progress-bar" style="width:00%"></div>
         </div>
 
-        <!-- Welcome Row -->
+        <!-- FIRST ROW OF CONTENT -->
         <div class="container-fluid">
             <div class="row">
+                <!-- SPACEHOLDER -->
                 <div class="col-sm-1">
-                    <!-- Spaceholder -->
                 </div>
-                <div class="col-sm-7" id="ha-welcome-div">
-                    <br><br><br><br>
-                    <h1 class="display-4">LearnLegion.com</h1>
-                    <br>
-                    <h4>Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.</h4>
-                    <br>
-                    <p style="margin-bottom: 0;">The main feature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills.</p>
-                    <p>Just start by selecting your legion for the current game you're in...</p>
-                    <button type="button" onclick="getResults(0)">getResults(0)</button>
-                    <button type="button" onclick="getResults(1)">getResults(1)</button>
-                    <button type="button" onclick="getResults(2)">getResults(2)</button>
-                    <button type="button" onclick="test()">test()</button>
+                <!-- WELCOME DIV -->
+                <div class="col-sm-7">
+                    <br><br><br>
+                    <div class="alert alert-danger alert-dismissable dismiss" id="alert">
+                        <a href="#" class="close" aria-label="close" onclick="dismissAlert()">&times;</a>
+                        <strong>Reminder!</strong> Don't forget to communicate with your team.
+                    </div>
+                    <div class="welcome dismiss" id="welcome">
+                        <h1 class="display-4">LearnLegion.com</h1>
+                        <br>
+                        <h4>Hello and welcome to LearnLegion! Keep in mind that this Website is still in an early stage of development so bugs can still occure.</h4>
+                        <br>
+                        <p style="margin-bottom: 0;">The main feature of this website is to give you some advices while playing LegionTD by which you can overall improve your skills.</p>
+                        <p>Just start by selecting your legion for the current game you're in...</p>
+                        <!--<button type="button" onclick="getUnits(0)">getUnits(0)</button>-->
+                    </div>
                 </div>
+                <!-- ADS -->
                 <div class="col-sm-4">
                     <br><br><br><br>
                     <!-- Advertisment goes here || LearnLegion_Mainblock -->
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
                         style="display:block"
                         data-ad-client="ca-pub-8861358739085235"
@@ -75,38 +82,38 @@
                         data-ad-format="auto"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+                    </script>-->
                     <!-- End of Advertisment -->
                 </div>
             </div>
         </div>
 
-        <!-- Dynamic Content Row -->
+        <!-- SECOND ROW OF CONTENT (DYNAMIC) -->
         <div class="container-fluid">
             <div class="row content">
-                <!-- Spaceholder -->
+                <!-- SPACEHOLDER -->
                 <div class="col-sm-1">
                 </div>
-                <!-- Selection Divs -->
+                <!-- SELECTION DIVS -->
                 <div class="col-sm-5">
                     
                     <!-- Step 1 | Select own class -->
                     <div class="guide-div fadein text-center" id="class-selection">
                         <div class="ltd-class-selector">
                             <form name="form1" id="form1">
-                                <input type="radio" name="class-select" value="element" id="element" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); getResults(0); incProgress('class');">
+                                <input type="radio" name="class-select" value="element" id="element" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
                                 <label class="ltd-class ltd-class-fix element" for="element" title="Element"></label>
 
-                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); getResults(0); incProgress('class');">
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
                                 <label class="ltd-class forsaken" for="forsaken" title="Forsaken"></label>
 
-                                <input type="radio" name="class-select" value="grove" id="grove" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); getResults(0); incProgress('class');">
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
                                 <label class="ltd-class grove" for="grove" title="Grove"></label>
 
-                                <input type="radio" name="class-select" value="mech" id="mech" onclick="showDiv('enemy-class-selection'); showDiv('result-div'); hideDiv('mm-unit-selection'); getResults(0); incProgress('class');">
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
                                 <label class="ltd-class mech" for="mech" title="Mech"></label>
 
-                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="hideDiv('enemy-class-selection'); showDiv('mm-unit-selection'); incProgress('class-mm');">
+                                <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="hideDiv('enemy-class-selection'); hideDiv('result-div'); showDiv('mm-unit-selection'); incProgress('class-mm'); dismissAlert();">
                                 <label class="ltd-class ltd-class-fix mastermind" for="mastermind" title="Mastermind"></label>
                             </form>
                         </div>
@@ -312,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Tips and Stuff -->
+                <!-- RESULT DIV -->
                 <div class="col-sm-5 fadein" id="result-div" style="display: none;">
                     <div class="text-center">
                         <div class="btn-group btn-group-md">
@@ -372,14 +379,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Spaceholder -->
+                <!-- SPACEHOLDER -->
                 <div class="col-sm-1">
                 </div>
             </div>
         </div>
     </body>
 
-    <!-- Load JS in the end for performance reasons -->
+    <!-- LOADING JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
