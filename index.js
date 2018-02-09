@@ -19,9 +19,6 @@ app.get('/',function(req,res) {
 });
 
 // more routes can be put here...
-app.get('/deploy/:gitUser.:gitRepo', function(req, res) {
-    res.send("User: " + req.params.gitUser + "Repo: " + req.params.gitRepo);
-});
 
 // START THE SERVER
 // ==========================================================
