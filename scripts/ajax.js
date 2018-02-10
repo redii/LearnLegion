@@ -29,7 +29,7 @@ function incProgress(j) {
         }
 }
 
-// COUNT CHECKS FOR MM-SELECT (FORM2)
+// COUNT CHECKS FOR MM-SELECT (FORM2)   getUnits(1)
 function countChecks(j) {
     var total = 0
     for(var i=0; i < document.form2.checkb.length; i++) {
@@ -58,7 +58,6 @@ function countChecks(j) {
             document.getElementById('progress-bar').style.width = '55%'
             break
         case 6:
-            getUnits(1)
             document.getElementById('progress-bar').style.width = '61%'
             showDiv('enemy-class-selection')
             showDiv('result-div')
@@ -66,7 +65,7 @@ function countChecks(j) {
     }
 }
 
-// COUNT CHECKS FOR ENEMY-SELECT (FORM3)
+// COUNT CHECKS FOR ENEMY-SELECT (FORM3)   getUnits(2)
 function countChecks2(j) {
     var total = 0
     for(var i=0; i < document.form3.checkb2.length; i++) {
@@ -80,27 +79,21 @@ function countChecks2(j) {
     }
     switch (total) {
         case 1:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '68%'
             break
         case 2:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '74%'
             break
         case 3:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '81%'
             break
         case 4:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '87%'
             break
         case 5:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '94%'
             break
         case 6:
-            getUnits(2)
             document.getElementById('progress-bar').style.width = '100%'
             break
     }

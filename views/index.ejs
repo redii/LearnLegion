@@ -14,38 +14,7 @@
     <!-- BODY -->
     <body>
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">LearnLegion</a>
-            
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Bugs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Donate</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- PROGRESSBAR -->
-        <div class="progress fixed-top">
-            <div class="progress-bar" id="progress-bar" style="width:00%"></div>
-        </div>
+        <% include partials/navbar.ejs %>
 
         <!-- FIRST ROW OF CONTENT -->
         <div class="container-fluid">
@@ -101,16 +70,16 @@
                     <div class="guide-div fadein text-center" id="class-selection">
                         <div class="ltd-class-selector">
                             <form name="form1" id="form1">
-                                <input type="radio" name="class-select" value="element" id="element" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
+                                <input type="radio" name="class-select" value="element" id="element" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert();">
                                 <label class="ltd-class ltd-class-fix element" for="element" title="Element"></label>
 
-                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
+                                <input type="radio" name="class-select" value="forsaken" id="forsaken" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert();">
                                 <label class="ltd-class forsaken" for="forsaken" title="Forsaken"></label>
 
-                                <input type="radio" name="class-select" value="grove" id="grove" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
+                                <input type="radio" name="class-select" value="grove" id="grove" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert();">
                                 <label class="ltd-class grove" for="grove" title="Grove"></label>
 
-                                <input type="radio" name="class-select" value="mech" id="mech" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert(); getUnits(0);">
+                                <input type="radio" name="class-select" value="mech" id="mech" onclick="hideDiv('mm-unit-selection'); showDiv('enemy-class-selection'); showDiv('result-div'); incProgress('class'); dismissAlert();">
                                 <label class="ltd-class mech" for="mech" title="Mech"></label>
 
                                 <input type="radio" name="class-select" value="mastermind" id="mastermind" onclick="hideDiv('enemy-class-selection'); hideDiv('result-div'); showDiv('mm-unit-selection'); incProgress('class-mm'); dismissAlert();">
