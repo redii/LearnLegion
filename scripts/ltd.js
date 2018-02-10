@@ -14,6 +14,9 @@ function httpGet(url) {
 }
 
 // GET UNITS-ARRAYS BY TYPE
+// 0 = Class selected
+// 1 = MM Units selection
+// 2 = Enemy Units selection
 // ==========================================================
 async function getUnits(type) {
     data = await httpGet('http://noc.redii.pw:3001/db')
